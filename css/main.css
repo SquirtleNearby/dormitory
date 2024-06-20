@@ -23,6 +23,7 @@ main {
   align-items: center;
   width: 750px;
   margin: 25px;
+  color: #444444;
 }
 .main-info-content__header {
   height: 30px;
@@ -120,6 +121,7 @@ main {
 .main-additional__info__title {
   margin-top: 8px;
   margin-bottom: 8px;
+  color: #444444;
 }
 
 .main-additional-info-content {
@@ -131,6 +133,7 @@ main {
   text-indent: 10px;
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
+  color: #444444;
 }
 
 .main-additional-info-content > h5 {
@@ -141,6 +144,9 @@ main {
   margin-top: 5px;
   text-align: right;
   letter-spacing: 0.1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #444444;
 }
 
 .main-additional-info-content__separator {
@@ -151,6 +157,7 @@ main {
 
 .main-additional-info-content__requests {
   margin-top: 18px;
+  color: #444444;
 }
 
 .main-additional-info-content__requests > h2 {
@@ -160,19 +167,21 @@ main {
 .main-additional-info-content__request {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  box-sizing: border-box;
+  width: 350px;
   padding: 7px 15px;
   margin-bottom: 5px;
 
   background-color: #E6F2FF;
   border-radius: 15px;
+  color: #444444;
   }
 
   .main-additional-info-content__request__closed {
     display: flex;
     flex-direction: column;
-    width: 320px;
-    padding: 7px 15px;
+    width: 340px;
+    padding: 5px;
     margin-bottom: 5px;
   
     background-color: #E6F2FF;
@@ -182,12 +191,15 @@ main {
   .main-additional-info-content__request__title {
     display: flex;
     justify-content: space-between;
+    color: #444444;
+    margin-left: 10px;
   }
 
   .main-additional-info-content__request__text {
     text-align: left;
     text-indent: 10px;
     font-family: "Open Sans", sans-serif;
+    color: #666666;
   }
 
   .main-additional-info-content__request__open {
