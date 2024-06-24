@@ -16,8 +16,9 @@ const styleElement = document.createElement('style');
 styleElement.innerHTML = `
             .main-additional-info-content_title::after,
             .main-additional-info-content_title::before,
-            .main-additional__info::after {
-                display: none !important;
+            .main-additional__info::after,
+            .main-additional_info__openPopup {
+                display: inline !important;
             }
         `;
 
@@ -29,3 +30,15 @@ document.querySelector('.main-additional__info__title').addEventListener('click'
   }
   hidden = !hidden;
 });
+
+const closedPopup = document.createElement('style');
+closedPopup.innerHTML = '.main-popup, .main-overlay {display: none !important;}';
+document.querySelector('.main-popup-form_closed').addEventListener('click', function () {
+  document.head.appendChild(closedPopup);
+})
+
+const openPopup = document.createElement('style');
+openPopup.innerHTML = '.main-popup, .main-overlay {display: flex !important}';
+document.querySelector('.main-additional_info__openPopup').addEventListener('click', function () {
+  document.head.appendChild(openPopup);
+})

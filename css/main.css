@@ -109,6 +109,7 @@ main {
   display: flex;
   width: 350px;
   height: 435px;
+  /* height: calc(min-content); */
   margin: 25px;
   flex-direction: column;
   text-align: center;
@@ -123,6 +124,19 @@ main {
   position: absolute;
   right: 10px;
   top: 10px;
+  display: none;
+}
+
+.main-additional_info__openPopup {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  border: 0 solid;
+  background: none;
+  cursor: pointer;
 }
 
 .main-additional__info__title {
@@ -156,12 +170,14 @@ main {
   content: url(../icons/Edit\ button.svg);
   position: absolute;
   right: 25px;
+  display: none;
 }
 
 .main-additional-info-content_title::before {
   content: url(../icons/Delete\ button.svg);
   position: absolute;
   left: 95%;
+  display: none;
 }
 
 .main-additional-info-content__date {
@@ -240,4 +256,102 @@ main {
 
   .dropDownButton.open {
     transform: scale(1, -1);
+  }
+
+  .main-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(68, 68, 68, 0.8);;
+    z-index: 2;
+    display: none; /* нужно display: flex*/
+  }
+
+  .main-popup {
+    position: fixed;
+    z-index: 3;
+    background-color: #fff;
+    width: 600px;
+    height: 230px;
+    display: none; /* нужно display: flex*/
+    justify-content: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+
+  .main-popup-form_closed {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+    border: 0 solid;
+    background: none;
+    z-index: 1;
+  }
+
+  .main-popup-form::after {
+    content: url(..//icons/Cross.svg);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  
+  .main-popup-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-popup-form_title {
+    width: 500px;
+    height: 30px;
+    border: 1px solid #0086FF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    
+    padding-left: 15px;
+    margin-bottom: 15px;
+    
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #666666;
+
+  }
+
+  .main-popup-form_text {
+    width: 500px;
+    min-height: 80px;
+    border: 1px solid #0086FF;
+    border-radius: 15px;
+    resize: none;
+    box-sizing: border-box;
+
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15px;
+  }
+
+  .main-popup-form_button {
+    height: 40px;
+    width: 500px;
+
+    border: 0 solid;
+    border-radius: 15px;
+    background-color: #0086FF;
+    cursor: pointer;
+
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.1em;
   }

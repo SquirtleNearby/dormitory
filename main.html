@@ -17,6 +17,15 @@
       <a href="profile.html"><img src="icons/Profile.svg" class="header__profile" /></a>
     </header>
     <main>
+      <div class="main-overlay"></div>
+      <div class="main-popup">
+        <div class="main-popup-form">
+          <button type="button" class="main-popup-form_closed"></button>
+          <input type="text" placeholder="Тема объявления" class="main-popup-form_title">
+          <textarea placeholder="Текст объявления" class="main-popup-form_text"></textarea>
+          <button type="submit" class="main-popup-form_button">Опубликовать</button>
+        </div>
+      </div>
       <div class="main-info">
         <div class="main-info-content">
           <div class="main-info-content__header">
@@ -112,6 +121,7 @@
         </div>
         <div>
           <div class="main-additional__info">
+            <button class="main-additional_info__openPopup"></button>
             <h2 class="main-additional__info__title">Доска объявлений</h2>
             <div class="main-additional-info-content">
               <h5 class="main-additional-info-content_title">Летнее проживание</h5>
