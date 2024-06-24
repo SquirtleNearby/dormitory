@@ -7,14 +7,13 @@ main {
 .main-info {
   display: flex;
 
-  margin-top: 60px;
+  margin: 60px 0;
   width: 1200px;
-  height: 730px;
-
 
   background-color: #fff;
   box-shadow: 0px 5px 10px rgba(153, 153, 153, 0.25);
   border-radius: 45px;
+  padding-bottom: 15px;
 }
 
 .main-info-content {
@@ -108,8 +107,6 @@ main {
 .main-additional__info {
   display: flex;
   width: 350px;
-  height: 435px;
-  /* height: calc(min-content); */
   margin: 25px;
   flex-direction: column;
   text-align: center;
@@ -117,6 +114,12 @@ main {
   background-color: #E6F2FF;
   border-radius: 15px;
   position: relative;
+  padding-bottom: 5px;
+}
+
+.main-additional_info__noMessages {
+  color: #444444;
+  text-align: center;
 }
 
 .main-additional__info::after {
@@ -173,6 +176,19 @@ main {
   display: none;
 }
 
+.main-additional-info-content__delete {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  border: 0 solid;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
 .main-additional-info-content_title::before {
   content: url(../icons/Delete\ button.svg);
   position: absolute;
@@ -198,6 +214,8 @@ main {
 .main-additional-info-content__requests {
   margin-top: 18px;
   color: #444444;
+  margin-left: 25px;
+  text-align: center;
 }
 
 .main-additional-info-content__requests > h2 {
