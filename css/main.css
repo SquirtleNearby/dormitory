@@ -130,6 +130,7 @@ main {
   margin-bottom: 8px;
   color: #444444;
   position: relative;
+  user-select: none;
 }
 
 .main-additional-info-content {
@@ -161,11 +162,6 @@ main {
   content: url(../icons/Delete\ button.svg);
   position: absolute;
   left: 95%;
-}
-
-.hide_pseudo::after,
-.hide_pseudo::before {
-  display: none !important;
 }
 
 .main-additional-info-content__date {
