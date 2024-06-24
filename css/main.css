@@ -32,7 +32,7 @@ main {
 .main-additional__info {
   display: flex;
   width: 350px;
-  height: 402px;
+  height: 435px;
   margin: 25px;
   flex-direction: column;
   text-align: center;
@@ -133,11 +133,13 @@ main {
   text-indent: 10px;
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   color: #444444;
 }
 
 .main-additional-info-content > h5 {
   text-indent: 0px;
+  margin-bottom: 10px;
 }
 
 .main-additional-info-content__date {
