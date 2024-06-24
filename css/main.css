@@ -29,19 +29,6 @@ main {
   height: 30px;
 }
 
-.main-additional__info {
-  display: flex;
-  width: 350px;
-  height: 435px;
-  margin: 25px;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  background-color: #E6F2FF;
-  border-radius: 15px;
-}
-
-
 .main-info-content__welcome {
   line-height: 20px;
   font-family: "Open Sans", sans-serif;
@@ -118,10 +105,31 @@ main {
   background-color: rgba(230, 242, 255, 0.7);
 }
 
+.main-additional__info {
+  display: flex;
+  width: 350px;
+  height: 435px;
+  margin: 25px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #E6F2FF;
+  border-radius: 15px;
+  position: relative;
+}
+
+.main-additional__info::after {
+  content: url(../icons/Add\ button.svg);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 .main-additional__info__title {
   margin-top: 8px;
   margin-bottom: 8px;
   color: #444444;
+  position: relative;
 }
 
 .main-additional-info-content {
@@ -137,9 +145,27 @@ main {
   color: #444444;
 }
 
-.main-additional-info-content > h5 {
+.main-additional-info-content_title {
   text-indent: 0px;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.main-additional-info-content_title::after {
+  content: url(../icons/Edit\ button.svg);
+  position: absolute;
+  right: 25px;
+}
+
+.main-additional-info-content_title::before {
+  content: url(../icons/Delete\ button.svg);
+  position: absolute;
+  left: 95%;
+}
+
+.hide_pseudo::after,
+.hide_pseudo::before {
+  display: none !important;
 }
 
 .main-additional-info-content__date {
