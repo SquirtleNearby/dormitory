@@ -7,7 +7,11 @@ body {
 }
 
 .bg-gradient {
-  background: linear-gradient(0deg, rgba(64, 97, 128, 0.75),  rgba(248, 255, 230, 0.1));
+  background: linear-gradient(
+    0deg,
+    rgba(64, 97, 128, 0.75),
+    rgba(248, 255, 230, 0.1)
+  );
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -40,7 +44,6 @@ body {
   justify-content: center;
   width: 400px;
   margin-top: 25px;
-
 }
 
 .main-auth-form > label {
@@ -52,7 +55,7 @@ body {
 }
 
 .main-auth-form__login {
-  border: 1px solid #0086FF;
+  border: 1px solid #0086ff;
   border-radius: 15px;
   padding: 5px;
   margin-top: 5px;
@@ -60,7 +63,7 @@ body {
 }
 
 .main-auth-form__password {
-  border: 1px solid #0086FF;
+  border: 1px solid #0086ff;
   border-radius: 15px;
   padding: 5px;
   margin-top: 5px;
@@ -69,7 +72,7 @@ body {
 
 .main-auth-form__submit {
   height: 40px;
-  background-color: #0086FF;
+  background-color: #0086ff;
   border: 0;
   border-radius: 15px;
 

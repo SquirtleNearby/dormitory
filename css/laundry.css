@@ -5,7 +5,6 @@ main {
   flex-direction: column;
 }
 
-
 .main-content__header {
   display: flex;
   justify-content: flex-start;
@@ -21,7 +20,7 @@ main {
   align-items: center;
   width: 250px;
   height: 45px;
-  
+
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 
@@ -30,9 +29,9 @@ main {
 }
 
 .main-content__header__closed {
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   color: #666666;
-  box-shadow: inset 0px -4px 10px rgba(153, 153, 153, 0.30)
+  box-shadow: inset 0px -4px 10px rgba(153, 153, 153, 0.3);
 }
 
 .main-content {
@@ -53,7 +52,7 @@ main {
 }
 
 .main-content__info__machine_column:first-of-type {
-  margin-left: 50px;;
+  margin-left: 50px;
 }
 
 .main-content__info__machine_column {
@@ -68,7 +67,7 @@ main {
 .main-content__info__machine_column__icon {
   width: 100px;
   height: 125px;
-  background-color: #DDDDDD;
+  background-color: #dddddd;
   border-radius: 15px;
   margin-bottom: 15px;
 }
@@ -90,36 +89,31 @@ main {
   cursor: pointer;
 }
 
-.main-content__info_machine_column_button img {
-  position: absolute;
-  right: 5px;
-}
-
-.main-content__info_machine_column_button__gray {
-  background-color: #EEEEEE;
+.main-content__info_machine_column_button__overdue {
+  background-color: #eeeeee;
   border-color: #999999;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-content__info_machine_column_button__orange {
-  background-color: #FFF4E6;
-  border-color: #FF9500;
+.main-content__info_machine_column_button__occupied {
+  background-color: #fff4e6;
+  border-color: #ff9500;
 }
 
-.main-content__info_machine_column_button__lime {
-  background-color: #E6FFE6;
-  border-color: #00FF11;
+.main-content__info_machine_column_button__selected {
+  background-color: #e6ffe6;
+  border-color: #00ff11;
 }
 
-.main-content__info_machine_column_button__blue {
-  background-color: #E6F2FF;
-  border-color: #0086FF;
+.main-content__info_machine_column_button__active {
+  background-color: #e6f2ff;
+  border-color: #0086ff;
 }
 
 .main-content__separator {
-  border: 1px solid #80C2FF;
+  border: 1px solid #80c2ff;
   height: 480px;
   margin: 25px 50px;
 }
@@ -137,13 +131,13 @@ main {
 
 .main-content__sidebar__info {
   display: flex;
-  
+
   margin-top: 15px;
   align-items: center;
   width: 330px;
   color: #444444;
   position: relative;
-  background-color: #E6F2FF;
+  background-color: #e6f2ff;
   border-radius: 15px;
   padding: 5px 15px;
 }
@@ -176,7 +170,7 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #fff;
-  background-color: #0086FF;
+  background-color: #0086ff;
   border-radius: 45px;
   border: 1px solid;
   cursor: pointer;

@@ -32,7 +32,7 @@ main {
 
 .main-content-info-sign_out_link {
   text-decoration: none;
-  color: #FF0700;
+  color: #ff0700;
   cursor: default;
 }
 
@@ -71,7 +71,7 @@ main {
 }
 
 .main-content__separator {
-  border: 1px solid #80C2FF;
+  border: 1px solid #80c2ff;
   height: 550px;
   margin: 25px 50px;
 }
@@ -89,7 +89,7 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  background-color: #E6F2FF;
+  background-color: #e6f2ff;
   width: 350px;
   margin-top: 15px;
 }
@@ -101,18 +101,18 @@ main {
   column-gap: 10px;
 }
 
-.main-content-payments-operation-amount>p {
+.main-content-payments-operation-amount > p {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
 }
 
-.main-content-payments-operation-amount>p:first-of-type {
+.main-content-payments-operation-amount > p:first-of-type {
   font-size: 16px;
 }
 
 .main-content-payments-operation_separator {
-  border: 1px solid #80C2FF;
+  border: 1px solid #80c2ff;
   width: 330px;
   margin-left: 10px;
   margin-top: 5px;
