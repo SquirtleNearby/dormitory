@@ -232,7 +232,7 @@ main {
     padding: 5px;
   }
 
-  #toggleButton {
+  .dropDownButton__closed {
     background-color: #E6F2FF;
     border: 0px solid;
     cursor: pointer;
