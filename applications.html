@@ -24,7 +24,62 @@
   <body>
     <main>
       <div class="main-content">
-        <div class="main-content-info"></div>
+        <div class="main-content-info">
+          <div class="handyman-selection main-content-info__handyman-selection">
+            <div
+              onclick="SelectHandyman(this)"
+              class="handyman-selection__flitter">
+              <div class="handyman-selection__handyman-icon">
+                <img src="icons/FlitterIcon.svg" draggable="false" />
+              </div>
+              <h2 class="handyman-selection__handyman-name">Слесарь</h2>
+            </div>
+            <div
+              onclick="SelectHandyman(this)"
+              class="handyman-selection__electrician">
+              <div class="handyman-selection__handyman-icon">
+                <img src="icons/ElectricianIcon.svg" draggable="false" />
+              </div>
+              <h2 class="handyman-selection__handyman-name">Электрик</h2>
+            </div>
+            <div
+              onclick="SelectHandyman(this)"
+              class="handyman-selection__plumber">
+              <div class="handyman-selection__handyman-icon">
+                <img src="icons/PlumberIcon.svg" draggable="false" />
+              </div>
+              <h2 class="handyman-selection__handyman-name">Сантехник</h2>
+            </div>
+          </div>
+          <div
+            class="problem-description main-content-info__problem-description">
+            <div class="problem-description__header">
+              <h5 class="problem-description__header-text">
+                Описание проблемы
+              </h5>
+            </div>
+            <textarea name="" class="problem-description__textarea"></textarea>
+            <div class="problem-description__specify-date">
+              <div class="problem-description__specified-date">
+                <p class="problem-description__specified-date-text">
+                  Удобная дата
+                </p>
+                <input type="date" class="problem-description__date-input" />
+              </div>
+              <div class="problem-description__specified-time">
+                <p class="problem-description__specified-time-text">
+                  Удобное время с
+                </p>
+                <input
+                  type="time"
+                  class="problem-description__time-from-input" />
+                <p class="problem-description__specified-time-text">до</p>
+                <input type="time" class="problem-description__time-to-input" />
+              </div>
+            </div>
+          </div>
+          <button class="main-content-info__submit-button">Отправить</button>
+        </div>
         <div class="main-content__separator"></div>
         <div class="main-additional-info-content__requests">
           <h2>Список заявок</h2>
@@ -41,68 +96,14 @@
               <p class="main-additional-info-content__request__text">
                 Нужно прочистить раковину
               </p>
-              <p class="main-additional-info-content__date">
+              <h4 class="main-additional-info-content__date">
                 Заявка от 13 июня
-              </p>
-            </div>
-          </div>
-          <div class="main-additional-info-content__request__closed">
-            <div class="main-additional-info-content__request__title">
-              <h5>Слесарь</h5>
-              <button class="dropDownButton open dropDownButton__closed">
-                <img src="icons/Expand button.svg" />
-              </button>
-            </div>
-            <div
-              class="main-additional-info-content__request__open"
-              style="display: none">
-              <p class="main-additional-info-content__request__text">
-                Нужно прикрутить полку к стене. А также отремонтировать стул.
-              </p>
-              <p class="main-additional-info-content__date">
-                Заявка от 16 июня
-              </p>
-            </div>
-          </div>
-          <div class="main-additional-info-content__request__closed">
-            <div class="main-additional-info-content__request__title">
-              <h5>Слесарь</h5>
-              <button class="dropDownButton open dropDownButton__closed">
-                <img src="icons/Expand button.svg" />
-              </button>
-            </div>
-            <div
-              class="main-additional-info-content__request__open"
-              style="display: none">
-              <p class="main-additional-info-content__request__text">
-                Нужно прикрутить полку к стене. А также отремонтировать стул.
-              </p>
-              <p class="main-additional-info-content__date">
-                Заявка от 16 июня
-              </p>
-            </div>
-          </div>
-          <div class="main-additional-info-content__request__closed">
-            <div class="main-additional-info-content__request__title">
-              <h5>Слесарь</h5>
-              <button class="dropDownButton open dropDownButton__closed">
-                <img src="icons/Expand button.svg" />
-              </button>
-            </div>
-            <div
-              class="main-additional-info-content__request__open"
-              style="display: none">
-              <p class="main-additional-info-content__request__text">
-                Нужно прикрутить полку к стене. А также отремонтировать стул.
-              </p>
-              <p class="main-additional-info-content__date">
-                Заявка от 16 июня
-              </p>
+              </h4>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <script src="js/dropDown.js"></script>
+    <script src="js/toggleElement.js"></script>
   </body>
 </html>

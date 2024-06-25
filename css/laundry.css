@@ -134,6 +134,7 @@ main {
 
 .main-content__sidebar__info img {
   position: absolute;
+  cursor: pointer;
   right: 15px;
 }
 
