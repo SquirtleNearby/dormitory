@@ -145,9 +145,10 @@ main {
   border-radius: 45px;
   border: 1px solid;
   cursor: pointer;
+  transition: 0.1s ease-in-out;
 }
 
-.main-content__sidebar__button:focus {
+.main-content__sidebar__button:hover {
   background-color: #0264b9;
   justify-content: ;
 }
