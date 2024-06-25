@@ -82,8 +82,11 @@ p {
   font-weight: 400;
 }
 
-.header__profile {
+.header_profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   right: 50px;
-  top: 10px;
+  column-gap: 10px;
 }

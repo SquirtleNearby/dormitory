@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/applications.css" />
+    <title>Личный кабинет</title>
+  </head>
+  <header class="header">
+    <a href="main.html" class="header-link">Главная</a>
+    <a href="laundry.html" class="header-link">Прачечная</a>
+    <a href="applications.html" class="header-link header-link__active">
+      Заявки
+    </a>
+    <a href="calculator.html" class="header-link">Калькулятор</a>
+    <div class="header_profile">
+      <h4 class="header-link">Маслов Г.О.</h4>
+      <a href="auth.html">
+        <img src="icons/Exit Profile.svg" />
+      </a>
+    </div>
+  </header>
+  <body>
+    <main>
+      <div class="main-content">
+        <div class="main-content-info"></div>
+        <div class="main-content__separator"></div>
+        <div class="main-additional-info-content__requests">
+          <h2>Список заявок</h2>
+          <div class="main-additional-info-content__request__closed">
+            <div class="main-additional-info-content__request__title">
+              <h5>Сантехник</h5>
+              <button class="dropDownButton open dropDownButton__closed">
+                <img src="icons/Expand button.svg" />
+              </button>
+            </div>
+            <div
+              class="main-additional-info-content__request__open"
+              style="display: none">
+              <p class="main-additional-info-content__request__text">
+                Нужно прочистить раковину
+              </p>
+              <p class="main-additional-info-content__date">
+                Заявка от 13 июня
+              </p>
+            </div>
+          </div>
+          <div class="main-additional-info-content__request__closed">
+            <div class="main-additional-info-content__request__title">
+              <h5>Слесарь</h5>
+              <button class="dropDownButton open dropDownButton__closed">
+                <img src="icons/Expand button.svg" />
+              </button>
+            </div>
+            <div
+              class="main-additional-info-content__request__open"
+              style="display: none">
+              <p class="main-additional-info-content__request__text">
+                Нужно прикрутить полку к стене. А также отремонтировать стул.
+              </p>
+              <p class="main-additional-info-content__date">
+                Заявка от 16 июня
+              </p>
+            </div>
+          </div>
+          <div class="main-additional-info-content__request__closed">
+            <div class="main-additional-info-content__request__title">
+              <h5>Слесарь</h5>
+              <button class="dropDownButton open dropDownButton__closed">
+                <img src="icons/Expand button.svg" />
+              </button>
+            </div>
+            <div
+              class="main-additional-info-content__request__open"
+              style="display: none">
+              <p class="main-additional-info-content__request__text">
+                Нужно прикрутить полку к стене. А также отремонтировать стул.
+              </p>
+              <p class="main-additional-info-content__date">
+                Заявка от 16 июня
+              </p>
+            </div>
+          </div>
+          <div class="main-additional-info-content__request__closed">
+            <div class="main-additional-info-content__request__title">
+              <h5>Слесарь</h5>
+              <button class="dropDownButton open dropDownButton__closed">
+                <img src="icons/Expand button.svg" />
+              </button>
+            </div>
+            <div
+              class="main-additional-info-content__request__open"
+              style="display: none">
+              <p class="main-additional-info-content__request__text">
+                Нужно прикрутить полку к стене. А также отремонтировать стул.
+              </p>
+              <p class="main-additional-info-content__date">
+                Заявка от 16 июня
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/dropDown.js"></script>
+  </body>
+</html>
