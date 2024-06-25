@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Удаляем класс active со всех кнопок
       buttons.forEach(btn => btn.classList.remove('main-content__info_machine_column_button__active'));
       // Добавляем класс active к нажатой кнопке
-      if (!button.classList.contains('main-content__info_machine_column_button__occupied') && !button.classList.contains('main-content__info_machine_column_button__overdue')) {
+      if (!button.classList.contains('main-content__info_machine_column_button__overdue') && !button.classList.contains('main-content__info_machine_column_button__selected') && !button.classList.contains('main-content__info_machine_column_button__occupied')) {
         button.classList.add('main-content__info_machine_column_button__active');
         activeButton = button;
       }
