@@ -38,7 +38,7 @@ main {
 .main-content__info__machine_column__icon {
   width: 100px;
   height: 125px;
-  background-color: #dddddd;
+  background-color: rgba(230, 242, 255, 0.6);
   border-radius: 15px;
   margin-bottom: 15px;
 }
