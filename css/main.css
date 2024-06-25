@@ -169,13 +169,6 @@ main {
   position: relative;
 }
 
-.main-additional-info-content_title::after {
-  content: url(../icons/Edit\ button.svg);
-  position: absolute;
-  right: 25px;
-  display: none;
-}
-
 .main-additional-info-content__delete {
   position: absolute;
   right: -2px;
